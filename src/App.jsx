@@ -27,7 +27,7 @@ export default function App(){
     <div className="app">
       <div className="sidebar">
         <FriendsList />
-        <FormAddFriend showAddFriend={showAddFriend}/>
+        { showAddFriend && <FormAddFriend /> }
         <Button onClick={() => setShowAddFriend(prevState => !prevState)}>{showAddFriend ? "Close" : "Add Friend"}</Button>
       </div>
       <FormSplitBill />
@@ -71,8 +71,7 @@ function Button({ children, onClick }) {
   );
 }
 
-function FormAddFriend({ showAddFriend }){
-  if (showAddFriend === false) return
+function FormAddFriend(){
   return(
     <form className="form-add-friend">
       <label>👨🏻‍🤝‍👨🏻 Friend Name</label>
