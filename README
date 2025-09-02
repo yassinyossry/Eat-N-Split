@@ -1,0 +1,38 @@
+# Split Bill App
+
+A simple app to manage and split bills with your friends.  
+It allows you to add friends, choose who paid the bill, and calculate who owes whom.  
+Built with **React** and organized into reusable components.
+
+---
+
+## ✨ Features
+- 🧑‍🤝‍🧑 Add new friends with profile images.
+- 💰 Enter the bill amount and specify who paid.
+- 🔄 Automatically calculate balances between you and your friends.
+- ✅ Clean, simple, Responsive UI design.
+- ⚡️ Organized components for scalability.
+
+---
+
+## 📂 Project Structure
+
+src/
+│ App.jsx
+│ main.jsx
+│ index.css
+└── components/
+   │ Friend.jsx
+   │ FriendsList.jsx
+   │ Button.jsx
+   │ FormAddFriend.jsx
+   │ FormSplitBill.jsx
+
+
+---
+
+## 🛠️ Tech Stack
+- **React**: Frontend library for building UI.
+- **JavaScript (ES6+)**: Core logic.
+- **CSS**: Styling and layout.
+- **Crypto UUID**: Generate unique IDs for friends.
